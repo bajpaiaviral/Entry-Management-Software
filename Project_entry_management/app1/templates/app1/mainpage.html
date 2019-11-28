@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container-fluid">
+  <div class="jumbotron">
+      <h1>Entry Management Software</h1>
+  </div>
+<div class="card" style="text-align:center;width:500px;margin-left:450px">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong><p>Enter Your Details to Check-In</p></strong>
+        <h3>{{error}}</h3>
+        <a href="http://127.0.0.1:8000/checkout">Want to check-out?/Already checked-in?</a>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#!" method="POST">
+
+         {%csrf_token%}
+
+            <p>
+
+            </p>
+
+            <!-- Name -->
+            <div class="md-form mt-3">
+              <label >Name</label>
+                <input type="text" name="name" class="form-control">
+
+            </div>
+
+            <!-- E-mai -->
+            <div class="md-form">
+              <label>E-mail</label>
+                <input type="email" name="email" class="form-control">
+
+            </div>
+            <div class="md-form">
+                <label >Mobile No.</label>
+                <input type="number" name="no" class="form-control">
+
+            </div>
+            <div class="md-form">
+              <label >Host Name</label>
+                <input type="text" name="hostname" class="form-control">
+
+            </div>
+            <div class="md-form">
+                <label >Host Email</label>
+                <input type="email" name="hostemail" class="form-control">
+
+            </div>
+            <div class="md-form">
+              <label >Host Mobile</label>
+                <input type="number" name="hostno" class="form-control">
+
+            </div>
+
+            <!-- Sign in button -->
+            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" name="check" type="submit">Check-In</button>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+</div>
+<!-- Material form subscription -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+</body>
+</html>

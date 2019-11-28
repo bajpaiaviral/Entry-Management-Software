@@ -1,5 +1,5 @@
 Logic Used -
-
+*Note api keys,email ids,message apis are removed for you to enter . 
 Check-In -
 1.The user coming on the homepage was given the options to check-in or check-out . 
 

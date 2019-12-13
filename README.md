@@ -5,7 +5,7 @@ Logic Used -
 Check-In -
 1.The user coming on the homepage was given the options to check-in or check-out . 
 
-2.The user wanting to checkout will have to to enter his contact details along with the host's details .
+2.The user wanting to check-in will have to to enter his contact details along with the host's details .
 
 3.As soon as he fills the form for check-in , the host would be notified on e-mail and mobile number . 
 
